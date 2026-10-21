@@ -1,0 +1,53 @@
+Database 
+---------
+>> It is an organized collection of data that we can store, update, delete and retrive.
+
+Relational DBMS  
+-------------------
+>> The data will be stored in form of tables(Rows, Cols).
+>> SQL is needed. 
+Ex: MySQL, PostgreSQL, Oracle....
+
+DBMS 
+-----
+>> The data will stored in form of Documents(JSON...)
+Ex: MongoDB, MariaDB...
+
+MySQL 
+-----
+>> Open source 
+>> It needs SQL 
+
+SQL 
+----
+>> Structured Query Language.
+
+Syntax
+-------
+>> Case insensitive.(a=A)
+SELECT * FROM tbname;
+select * from tbname;
+>> Deleimiter ";"
+
+MySQL Server (data is stored and manipulated here)
+MySQL Workbench
+MySQL Shell
+
+Schema    ---> Table ---> Data
+(Dtabase)
+
+Entity --> Realtime objects (what the table is going to be about)
+attributes --> Information about the entity
+
+actor --> name, age
+
+actordetails --> id, name, age
+
+Queries 
+--------
+To Create a Database --> CREATE DATABSE dbName;
+To Create a Table --> CREATE TABLE TableName (
+    col1 DT constraints,
+    col2 DT constraints,
+    col3 DT constraints
+);
