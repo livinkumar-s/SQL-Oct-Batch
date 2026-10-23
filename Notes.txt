@@ -40,14 +40,89 @@ Entity --> Realtime objects (what the table is going to be about)
 attributes --> Information about the entity
 
 actor --> name, age
-
 actordetails --> id, name, age
+
+Datatypes 
+-----------
+Numeric Datatypes 
+--------------------
+INT --> whole numbers
+FLOAT --> Decimal Numbers 
+BIGINT --> larger whole numbers 
+DOUBLE --> large decimal numbers 
+
+String Datatypes 
+-----------------
+CHAR(n) --> Fixed length char string. CHAR(5) --> "Hello", "sandhiya"
+VARCHAR(n) --> variable length char string. VARCHAR(5) --> "Hi", "Bye", "Hello", "Welcome"
+TEXT --> paragraph.
+
+Boolean Datatypes 
+---------------------
+BOOLEAN --> 0 0r 1
+
+DATE and TIME 
+-------------------
+DATE -- "yyyy-mm-dd" ("2026-10-23")
+TIME -- "HH:MM:SS" ("12:42:45")
+DATETIME --> both
+
+Constraints
+---------------
+PRIMARY KEY --> unique and no nulls. it identify each records uniquely.
+
+Operators 
+-------------
+Comparison Operators 
+-----------------------
+=
+<>, !=
+<
+>
+<=
+>=
 
 Queries 
 --------
 To Create a Database --> CREATE DATABSE dbName;
+To Select a Dtabase --> USE Dbname;
 To Create a Table --> CREATE TABLE TableName (
     col1 DT constraints,
     col2 DT constraints,
     col3 DT constraints
 );
+
+To Insert records --> INSERT INTO tbname (col details) VALUES (),(),()....
+To Retrive data from a table --> SELECT coldetail(*) FROM tbname;
+To Update a record --> UPDATE tbname SET col=val;
+To Delete a record --> DELETE FROM tbname;
+
+SQL_SAFE_UPDATES --> update/delete only 1 rec from a table. where clause is must.PK col for filteration
+
+SET SQL_SAFE_UPDATES = 0;
+
+CRUD 
+-----
+Create --> INSERT
+Read --> SELECT
+Update --> UPDATE
+Delete --> DELETE
+
+WHERE clause 
+----------------
+>> it filters the records.
+Ex: SELECT, UPDATE, DELETE ..... WHERE cond;
+condition --> expressions that return bool. 
+
+
+students 
+--------
+name    age    id(ind)(PK)
+--------------------------
+ken     23      1
+ben     18      2
+qwen    17      3
+ken     null      4
+
+
+update age id=4
