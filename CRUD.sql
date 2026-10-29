@@ -25,7 +25,7 @@ UPDATE actors set age=72;
 
 SET SQL_SAFE_UPDATES = 1;
 
-select * from actors where age>50;
+select * from actors where age<30;
 select id, name, age from actors where name="PersonX";
 
 DELETE FROM actors WHERE id=11;
@@ -36,3 +36,4 @@ select 1,2,3;
 
 select name as actorName,age as actorAge from actors;
 select 1,"vijay" from actors;
+

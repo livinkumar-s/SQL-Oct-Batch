@@ -82,6 +82,44 @@ Comparison Operators
 <=
 >=
 
+Logical Operators 
+--------------------
+AND 
+OR 
+NOT
+
+BETWEEN (inclusive)
+---------
+>> checks whether a value falls within a range. 
+Ex... WHERE col BETWEEN num1 AND num2;
+
+IN 
+---
+>> checks whether a value matches any value in a list.
+Ex: ... WHERE col IN (v1,v2,v3....);
+
+LIKE Operator 
+--------------
+>> Pattern Matching
+Ex: ....WHERE strCol LIKE pattern;
+
+wildcard:
+% --> matches 0 to inf number of chars
+_ --> matches only 1 char 
+
+"a%" --> "anbu", "anshya", "a"....
+"%a" 
+
+LIMIT/OFFSET 
+-----------------
+>> limit keyword limits the number of records.
+>> offset skips the records at the begenning.
+
+ORDER BY 
+---------
+>> Arranging the records.
+Ex: ... ORDER BY col ASC/DESC;
+
 Queries 
 --------
 To Create a Database --> CREATE DATABSE dbName;
@@ -122,7 +160,12 @@ name    age    id(ind)(PK)
 ken     23      1
 ben     18      2
 qwen    17      3
-ken     null      4
+ken     null    4
 
 
 update age id=4
+
+
+"livin kumar"
+"leo das"
+"arjun dev"
