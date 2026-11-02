@@ -120,6 +120,52 @@ ORDER BY
 >> Arranging the records.
 Ex: ... ORDER BY col ASC/DESC;
 
+Functions 
+------------
+
+gets input from only one row --> returns output
+
+Numeric Functions 
+------------------
+ROUND(dec,num) --> rounds off
+FLOOR(dec)
+CEIL(dec) --> 3.000001 --> 4
+MOD(n1,n2)
+ABS(num)
+SQRT(num)
+POWER(num,power)
+
+String Functions 
+-------------------
+CONCAT(str1,str2,str3........)
+LENGTH(str)
+UPPER()
+LOWER()
+TRIM()
+LTRIM()
+RTRIM()
+REPLACE(str, old, new)
+Substring(str, start, len)
+
+Date and Time 
+----------------
+CURDATE()
+CURTIME()
+NOW()
+DATEDIFF(d1,d2)
+
+Aggregate Functions 
+---------------------
+SUM 
+COUNT 
+AVG 
+MAX 
+MIN
+
+Control Flow Functions 
+-----------------------------
+IF....
+
 Queries 
 --------
 To Create a Database --> CREATE DATABSE dbName;
@@ -169,8 +215,6 @@ update age id=4
 "livin kumar"
 "leo das"
 "arjun dev"
-
-
 
 aggregate (max) --> eldest persons age (93)
 where age=93
