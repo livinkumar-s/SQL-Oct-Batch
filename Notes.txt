@@ -69,7 +69,15 @@ DATETIME --> both
 
 Constraints
 ---------------
+>> rules applied to a cloumn to control type of data that can be inserted, updated or deleted.
+
 PRIMARY KEY --> unique and no nulls. it identify each records uniquely.
+FOREIGN KEY --> used to establish relationship between two tables.(referential integrity)
+AUTO_INCREMENT --> generates serial number row by row.
+UNIQUE --> No duplicates
+NOT NULL --> No null values
+DEFAULT --> adding default value to a cloumn.
+CHECK --> add condition. CHECK (cond)
 
 Operators 
 -------------
@@ -218,3 +226,24 @@ update age id=4
 
 aggregate (max) --> eldest persons age (93)
 where age=93
+
+
+
+cricketer
+-------------
+id   name         mail            cen  active 
+----------------------------------------------
+1	Virat Kohli	    vk@gmail.com	87	1
+3	Rohit Sharma	rs@gmail.com	120	1
+4	MS Dhoni	    md@gmail.com	105	1
+5	viv rich	    vr@gmail.com	90	1
+6	gayle	        boss@gmail.com	90	0
+
+
+jersey 
+-------
+id  jersey  playerId (foreignKey --> cricket(id))
+---------------------
+1    45      3
+2    18      1
+3    999     56(invalid)

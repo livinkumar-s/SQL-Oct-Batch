@@ -28,3 +28,6 @@ USE octbatch1;
 SELECT upper(name) as name, mod(age,2) as age from actors;
 
 
+SELECT CONCAT("His name is ", UPPER(name), ". He is ", age,".") 
+AS Details 
+FROM actors;
