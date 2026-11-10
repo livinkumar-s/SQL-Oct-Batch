@@ -227,6 +227,36 @@ update age id=4
 aggregate (max) --> eldest persons age (93)
 where age=93
 
+Joins 
+---------
+>> it is used to combine records from 2 or more tables.
+
+Inner Join 
+----------
+>> it returns only the matching records.
+Ex: SELECT colDetails FROM tb1 INNER JOIN tb2 ON relatedcolumns;
+
+Left Outer Join 
+----------
+>> it returns only the matching records from right.
+>> all from left table.
+Ex: SELECT colDetails FROM tb1 LEFT JOIN tb2 ON relatedcolumns;
+
+Right Outer Join 
+----------
+>> all from both tables.
+Ex: SELECT colDetails FROM tb1 RIGHT JOIN tb2 ON relatedcolumns
+UNION
+SELECT colDetails FROM tb1 RIGHT JOIN tb2 ON relatedcolumns;
+
+Full Outer Join 
+----------
+>> it returns only the matching records from left.
+>> all from right table.
+Ex: SELECT colDetails FROM tb1 RIGHT JOIN tb2 ON relatedcolumns;
+
+CROSS JOIN 
+-------------
 
 
 cricketer
@@ -247,3 +277,13 @@ id  jersey  playerId (foreignKey --> cricket(id))
 1    45      3
 2    18      1
 3    999     56(invalid)
+
+
+iplTeam 
+-------
+id  teamName  playerId 
+---------------------
+1   csk        4
+2   rcb        1
+3   mi         3
+4   pbks       99(invalid)
